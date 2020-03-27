@@ -14,3 +14,5 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout:
 
 }))
+
+module.exports = 
