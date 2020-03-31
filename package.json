@@ -18,12 +18,14 @@
   },
   "homepage": "https://github.com/helenmasch/burger#readme",
   "dependencies": {
+    "core-util-is": "^1.0.2",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.0",
     "my": "^0.3.3",
     "mysql": "^2.18.1",
     "nconf": "^0.10.0",
     "sql": "^0.78.0",
-    "table": "^5.4.6"
+    "table": "^5.4.6",
+    "webpack-dev-server": "^3.10.3"
   }
 }
