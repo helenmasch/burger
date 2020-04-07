@@ -14,15 +14,15 @@ router.get("/", function(req, res) {
     });
 });
 
-router.post("/", function(req, res){
-    burgers.insert(req.body.burger_name), function(){
+router.post("/api/burgers", function(req, res){
+    burgers.insert(req.body.burger_name, function(data){
         res.redirect("/");
-    };
+    });
 });
 
-router.put("/:id", function(req, res) {
-    var condition = req.params,id;
-    burgers.update(condition, function(){
+router.put("/api/burgers/:id", function(req, res) {
+    var id = req.params.id;
+    burgers.update(id, function(){
         res.redirect("/");
     });
 });

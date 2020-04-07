@@ -10,22 +10,23 @@ var orm = {
             cb(result);
         });
     },
-    insertOne: function(val, cb) {
-        var queryString = `INSERT INTO burgers (burger_name, devoured) VALUES ('${val}', false)`;
+    insertOne: function(tableName, cols, vals, cb) {
+        var queryString = `INSERT INTO ??  (??, ??) VALUES (?, ?)`;
 
-        connection.query(queryString, function(err, result){
+      var statement = connection.query(queryString, [tableName, cols[0],cols[1], vals[0], vals[1]],function(err, result){
             if(err) {
                 throw err;
             }
             cb(result);
         });
+        console.log(statement.sql)
     },
     // Now updates the devoured boolean for each of the selected burgers
-    updateOne: function(condition, cb) {
-        var queryString = `UPDATE burgers SET devoured = true WHERE id = ${condition}` ;
+    updateOne: function(tableName, cols, vals, cb) {
+        var queryString = `UPDATE ?? SET ?? = ? WHERE ?? = ?` ;
 
         console.log(queryString);
-        connection.query(queryString, function(err, result) {
+        connection.query(queryString,[tableName, cols[0], vals[0], cols[1], vals[1]], function(err, result) {
             if(err) {
                 throw err;
             }
