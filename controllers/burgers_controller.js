@@ -16,14 +16,14 @@ router.get("/", function(req, res) {
 
 router.post("/api/burgers", function(req, res){
     burgers.insert(req.body.burger_name, function(data){
-        res.redirect("/");
+        res.json(data)
     });
 });
 
 router.put("/api/burgers/:id", function(req, res) {
     var id = req.params.id;
-    burgers.update(id, function(){
-        res.redirect("/");
+    burgers.update(id, function(data){
+        res.json(data);
     });
 });
 

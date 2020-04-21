@@ -25,13 +25,15 @@ var orm = {
     updateOne: function(tableName, cols, vals, cb) {
         var queryString = `UPDATE ?? SET ?? = ? WHERE ?? = ?` ;
 
-        console.log(queryString);
-        connection.query(queryString,[tableName, cols[0], vals[0], cols[1], vals[1]], function(err, result) {
+        
+       var statement = connection.query(queryString,[tableName, cols[0], vals[0], cols[1], vals[1]], function(err, result) {
             if(err) {
                 throw err;
             }
             cb(result);
         });
+
+        console.log(statement.sql)
     }
 };
 module.exports = orm;
