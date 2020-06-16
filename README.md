@@ -47,16 +47,15 @@ When a user submits a burger's name, the app displays the burger on the left sid
 │
 ├── public
 │   └── css
-│       └──style.css
+│       └── style.css
 │       └── js
 │           └── app.js
-│   └── app.js
-│   
+
+├── views
+│   └── layouts
+│       └── main.handlebars
+│       └── index.handlebars 
 │
 ├── server.js
-│
-└── views
-    ├── index.handlebars
-    └── layouts
-        └── main.handlebars
+
 ```
