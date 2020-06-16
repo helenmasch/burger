@@ -18,6 +18,45 @@ When a user submits a burger's name, the app displays the burger on the left sid
 * HTML
 * CSS
 * JavaScript
+    constructors
 
 ## Contributor
 * Helen Maschmeyer
+
+
+#### Directory structure
+```
+.
+├── config
+│   ├── connection.js
+│   └── orm.js
+│ 
+├── controllers
+│   └── burgers_controller.js
+│
+├── db
+│   ├── schema.sql
+│   └── seeds.sql
+│
+├── models
+│   └── burger.js
+│ 
+├── node_modules
+│ 
+├── package.json
+│
+├── public
+│   └── css
+│       └──style.css
+│       └── js
+│           └── app.js
+│   └── app.js
+│   
+│
+├── server.js
+│
+└── views
+    ├── index.handlebars
+    └── layouts
+        └── main.handlebars
+```
