@@ -24,7 +24,7 @@ When a user submits a burger's name, the app displays the burger on the left sid
 * Helen Maschmeyer
 
 
-#### Directory structure
+## Directory structure
 ```
 .
 ├── config
