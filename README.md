@@ -1,4 +1,4 @@
-# Eat-The-Burger!
+# Eat-The-Burger! :hamburger:
 
 > ## Overview
 > Eat-The-Burger is a restaurant app that allows the user to input the names of burgers they'd like to eat! 
