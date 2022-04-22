@@ -23,7 +23,7 @@
     "express-handlebars": "^4.0.0",
     "my": "^0.3.3",
     "mysql": "^2.18.1",
-    "nconf": "^0.10.0",
+    "nconf": "^0.11.4",
     "sql": "^0.78.0",
     "table": "^5.4.6",
     "webpack-dev-server": "^3.10.3"
